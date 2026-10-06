@@ -1,7 +1,7 @@
 # NamuVocaroLyric (나무보카로가사)
 
 > **나무위키 보컬로이드 / Piapro Characters / 프로젝트 세카이 가사 마크다운 제작 에디터**  
-> 현재 버전: **v1.6.0**(개발중) | 라이선스: **MIT**
+> 현재 버전: **v1.5.1**(개발중) | 라이선스: **MIT**
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## 💻 다운로드 및 설치
 
-최신 버전(v1.6.0)의 독립 실행 파일 및 설치 프로그램은 GitHub Releases에서 다운로드하실 수 있습니다.
+최신 버전(v1.5.1)의 독립 실행 파일 및 설치 프로그램은 GitHub Releases에서 다운로드하실 수 있습니다.
 
 * **[⬇️ 최신 릴리즈 다운로드](https://github.com/kangdol/NamuVocaroLyric/releases)**
 
