@@ -1518,6 +1518,45 @@ textarea#markdown-output {
     margin: 0;
 }
 
+/* --- Floating Desktop Download Button (Web Only) --- */
+.btn-desktop-download-floating {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 22px;
+    background-color: var(--bg-pane);
+    border: 1px solid var(--bg-pane-border);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    font-size: 0.85rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+    user-select: none;
+}
+
+.btn-desktop-download-floating:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 12px rgba(59, 130, 246, 0.25);
+    color: var(--accent-color);
+}
+
+.btn-desktop-download-floating .desktop-download-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
 /* --- Floating Settings Button --- */
 .btn-settings-floating {
     position: fixed;
@@ -1945,6 +1984,15 @@ body:not(.light-mode).pure-black {
     }
 
     /* ⚙️ Floating button mobile safe area adjustments */
+    .btn-desktop-download-floating {
+        bottom: 16px;
+        left: 16px;
+        height: 38px;
+        padding: 0 12px;
+        font-size: 0.78rem;
+        gap: 6px;
+    }
+
     .btn-settings-floating {
         bottom: 16px;
         right: 16px;

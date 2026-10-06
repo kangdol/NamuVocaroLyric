@@ -388,6 +388,27 @@
         </div>
     </div>
 
+    <!-- MODAL: FACTORY RESET CONFIRMATION (Cloned from danger-modal, no easter egg) -->
+    <div id="reset-confirm-modal" class="modal-backdrop hidden" style="z-index: 6500;">
+        <div class="modal-card modal-card-sm" style="border: 2px solid var(--danger-color); box-shadow: 0 0 20px rgba(234, 67, 53, 0.4); overflow: hidden;">
+            <div class="modal-header" style="background-color: rgba(234, 67, 53, 0.1); border-bottom-color: rgba(234, 67, 53, 0.2);">
+                <h3 style="color: var(--danger-color); font-weight: 800; display: flex; align-items: center; gap: 0.5rem; animation: pulse 1s infinite;">
+                    🚨 경고
+                </h3>
+            </div>
+            <div class="modal-body" style="text-align: center; padding: 2rem 1.5rem;">
+                <div id="reset-confirm-icon-container" style="font-size: 3rem; margin-bottom: 1rem; animation: pulse 0.5s infinite;">⚠️</div>
+                <p id="reset-confirm-message" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">
+                    정말 모든 설정과 데이터를 초기화하시겠습니까?<br><span style="color: var(--danger-color); font-weight: 700;">(복구할 수 없습니다!)</span>
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <button type="button" id="btn-reset-confirm-no" class="btn btn-secondary" style="flex: 1; padding: 0.75rem 1.5rem; font-weight: 700; justify-content: center;">아니오 (취소)</button>
+                    <button type="button" id="btn-reset-confirm-yes" class="btn btn-danger" style="flex: 1; padding: 0.75rem 1.5rem; font-weight: 700; background-color: var(--danger-color); color: white; justify-content: center;">예 (초기화)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL: AUTOSAVE RECOVERY -->
     <div id="autosave-recovery-modal" class="modal-backdrop hidden">
         <div class="modal-card modal-card-sm" style="overflow: hidden;">
@@ -485,6 +506,12 @@
 
     <!-- FLOATING TOAST NOTIFICATION CONTAINER -->
     <div id="toast-container" class="toast-container"></div>
+
+    <!-- FLOATING DESKTOP DOWNLOAD BUTTON (WEB ONLY) -->
+    <a id="btn-desktop-download-floating" class="btn-desktop-download-floating hidden" href="https://github.com/kangdol/NamuVocaroLyric/releases/latest" target="_blank" rel="noopener noreferrer" title="GitHub 릴리즈에서 최신 데스크톱 버전 다운로드">
+        <span class="desktop-download-icon">💻</span>
+        <span class="desktop-download-text">데스크톱 버전 다운로드</span>
+    </a>
 
     <!-- FLOATING SETTINGS BUTTON -->
     <button id="btn-settings-floating" class="btn-settings-floating" title="프로그램 설정">⚙️</button>
@@ -618,8 +645,13 @@
                             본 프로그램은 어떠한 형태의 보증도 없이 제공됩니다.
                         </span>
                     </p>
-                    <div class="settings-version" style="text-align: left; margin-top: 1rem; font-size: 10px; color: var(--text-muted); opacity: 0.7; font-weight: 500;">
-                        <span id="settings-version-link" style="cursor: pointer; text-decoration: underline;" title="패치노트 보기">버전 v1.6.0</span>
+                    <div class="settings-footer-bottom" style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; font-size: 10px; color: var(--text-muted); opacity: 0.7; font-weight: 500;">
+                        <div class="settings-version">
+                            <span id="settings-version-link" style="cursor: pointer; text-decoration: underline;" title="패치노트 보기">버전 v1.6.0</span>
+                        </div>
+                        <div class="settings-reset">
+                            <span id="settings-reset-link" style="cursor: pointer; text-decoration: underline;" title="모든 설정 및 데이터 초기화">설정 초기화</span>
+                        </div>
                     </div>
                 </div>
             </div>

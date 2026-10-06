@@ -18,7 +18,9 @@
         "request": true,
         "scope": [
           "https://namu.wiki/**",
-          "https://gall.dcinside.com/**"
+          "https://gall.dcinside.com/**",
+          "https://github.com/**",
+          "https://api.github.com/**"
         ]
       }
     },

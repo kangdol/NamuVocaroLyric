@@ -88,18 +88,13 @@ When developing in this codebase, any AI agent **MUST adhere to the following st
 - **First-Run Trigger**:
   On startup, compare `localStorage.getItem('last_seen_patchnotes_version')` against `CURRENT_VERSION ("1.6.0")`. If mismatched, automatically pop open the patch notes modal at `z-index: 6000` above the startup setup dialog.
 
-### Rule 4: Namuwiki-based Update Checker (`checkForUpdates`)
-- **Target URL**: `https://namu.wiki/w/%EC%82%AC%EC%9A%A9%EC%9E%90:kangdoi`
-- **HTTP Allowlist**: `src-tauri/tauri.conf.json` has `"https://namu.wiki/**"` in `tauri.allowlist.http.scope`.
-- **Parsing Pattern**: The user writes plain text updates on their Namuwiki user page in the format:
-  ```text
-  Patch ver - {version} {download_url}
-  ```
-  *(Example: `Patch ver - 1.5.2 https://kio.ac/c/example` or with wiki links `[[https://...|...]]`)*
-- **Regex Specification**:
-  ```javascript
-  const patchRegex = /Patch\s*ver\s*-\s*(?:v)?(\d+\.\d+\.\d+(?:\.\d+)?)\s*(?:<a[^>]+href=["']([^"']+)["'][^>]*>|([^\s<"']+))/i;
-  ```
+### Rule 4: GitHub Releases-based Update Checker (`checkForUpdates`)
+- **API Target**: `https://api.github.com/repos/kangdol/NamuVocaroLyric/releases/latest`
+- **Fallback Web Target**: `https://github.com/kangdol/NamuVocaroLyric/releases`
+- **HTTP Allowlist**: `src-tauri/tauri.conf.json` includes `"https://api.github.com/**"` and `"https://github.com/**"` in `tauri.allowlist.http.scope`.
+- **Query & Fallback Strategy**:
+  1. Requests `releases/latest` JSON via GitHub REST API, extracts `tag_name` (stripping leading `v`), and resolves `.exe` installer asset URL or `html_url`.
+  2. If the API fails (e.g. rate limit or network issue), falls back to scraping `https://github.com/kangdol/NamuVocaroLyric/releases` HTML with `/releases\/tag\/(?:v)?(\d+\.\d+\.\d+(?:\.\d+)?)/i`.
 - **Semantic Integer Comparison**: Multi-digit versions (e.g., `1.5.10` vs `1.5.2`) are parsed numerically via `compareVersions()` by splitting `.` into integer arrays.
 - **Modal UI Constraint**: The update modal (`#update-confirm-modal`) contains **ONLY** the `⬇️ 최신 버전 다운로드` button, `이번 버전 건너뛰기`, and `나중에 하기`. **Do NOT reintroduce any "배포 안내 페이지 보기" buttons**.
 

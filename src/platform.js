@@ -267,6 +267,29 @@
                     localStorage.setItem('nvl_config', JSON.stringify(cfg));
                 } catch (_) {}
                 return { status: 'saved' };
+            },
+
+            async resetAllData() {
+                if (Platform.isTauri()) {
+                    if (window.__TAURI__ && window.__TAURI__.invoke) {
+                        return await window.__TAURI__.invoke('reset_all_data');
+                    }
+                } else {
+                    try {
+                        localStorage.removeItem('nvl_config');
+                        localStorage.removeItem('nvl_custom_standard');
+                        localStorage.removeItem('nvl_custom_sekai');
+                        localStorage.removeItem('nvl_custom_unit');
+                        localStorage.removeItem('nvl_lyrics_files');
+                        localStorage.removeItem('_autosave.txt');
+                        localStorage.removeItem('last_seen_patchnotes_version');
+                        localStorage.removeItem('last_seen_notice_time');
+                        localStorage.removeItem('current_song_title');
+                    } catch (e) {
+                        console.warn('[Platform.storage] resetAllData error:', e);
+                    }
+                    return { status: 'success' };
+                }
             }
         },
 
@@ -420,6 +443,10 @@
                 if (urlPath === 'api/save-config') {
                     const body = JSON.parse(options.body || '{}');
                     return mockResponse(Platform.storage.saveConfig(body));
+                }
+                if (urlPath === 'api/reset-all') {
+                    const res = await Platform.storage.resetAllData();
+                    return mockResponse(res);
                 }
 
                 // 2. Character DB

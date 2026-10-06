@@ -4,7 +4,8 @@
   "description": "NamuVocaroLyric Editor",
   "main": "src/index.js",
   "scripts": {
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "web": "node scripts/dev_web.js"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.5.14"

@@ -596,6 +596,24 @@ fn open_new_window() -> Result<(), String> {
     Ok(())
 }
 
+#[tauri::command]
+fn reset_all_data() -> Result<(), String> {
+    let data_dir = get_data_dir();
+    let targets = [
+        "config.json",
+        "custom_colors.json",
+        "custom_colors_sekai.json",
+        "custom_colors_unit.json",
+    ];
+    for name in &targets {
+        let path = data_dir.join(name);
+        if path.exists() {
+            let _ = fs::remove_file(&path);
+        }
+    }
+    Ok(())
+}
+
 fn main() {
     let _ = ensure_db_files_exist();
     tauri::Builder::default()
@@ -614,7 +632,8 @@ fn main() {
             log_text,
             force_exit,
             exit_app,
-            open_new_window
+            open_new_window,
+            reset_all_data
         ])
         .on_window_event(|event| match event.event() {
             tauri::WindowEvent::CloseRequested { api, .. } => {

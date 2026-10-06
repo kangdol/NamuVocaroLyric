@@ -175,7 +175,7 @@ impl eframe::App for UpdaterApp {
                         // Header Banner
                         ui.add_space(5.0);
                         ui.heading(
-                            egui::RichText::new("NamuVocaroLyric v1.5.1 설치 및 업데이트")
+                            egui::RichText::new("NamuVocaroLyric v1.6.0 설치 및 업데이트")
                                 .size(18.0)
                                 .strong()
                                 .color(egui::Color32::from_rgb(43, 43, 43)), // text-primary
@@ -226,10 +226,10 @@ impl eframe::App for UpdaterApp {
                                 
                                 if self.mode == Some(AppMode::UpdateMigration) {
                                      if self.migrated {
-                                         ui.label("기존 데이터베이스 마이그레이션 및 1.5.1 버전 업데이트가 성공적으로 끝났습니다.");
+                                         ui.label("기존 데이터베이스 마이그레이션 및 1.6.0 버전 업데이트가 성공적으로 끝났습니다.");
                                          ui.label("기존 사용자 지정 설정과 색상 값은 custom_colors.json으로 안전하게 분리 백업되었습니다.");
                                      } else {
-                                         ui.label("1.5.1 버전 업데이트가 성공적으로 끝났습니다.");
+                                         ui.label("1.6.0 버전 업데이트가 성공적으로 끝났습니다.");
                                      }
                                 } else {
                                     ui.label("NamuVocaroLyric 프로그램의 신규 설치가 깨끗하게 완료되었습니다.");
@@ -294,7 +294,7 @@ impl eframe::App for UpdaterApp {
                                                         })
                                                 );
                                                 ui.add_space(4.0);
-                                                ui.small("기존 1.2.0 이하 버전의 데이터를 유지하며\n1.5.1으로 안전하게 업데이트합니다.");
+                                                ui.small("기존 1.2.0 이하 버전의 데이터를 유지하며\n1.6.0으로 안전하게 업데이트합니다.");
                                             });
                                         })
                                         .response;
@@ -646,7 +646,7 @@ fn run_installer(mode: AppMode, target_path_str: String, create_shortcut: bool, 
         } else {
             serde_json::Map::new()
         };
-        config_map.insert("db_version".to_string(), serde_json::Value::String("1.5.1".to_string()));
+        config_map.insert("db_version".to_string(), serde_json::Value::String("1.6.0".to_string()));
         let config_json = serde_json::to_string_pretty(&serde_json::Value::Object(config_map))
             .map_err(|e| format!("설정 파일 직렬화 실패: {}", e))?;
         fs::write(config_path, config_json).map_err(|e| format!("설정 파일 저장 실패: {}", e))?;
@@ -672,7 +672,7 @@ fn run_installer(mode: AppMode, target_path_str: String, create_shortcut: bool, 
             "isPreviewLoggerActive": true,
             "isTextLoggerActive": true,
             "isDevModeActive": true,
-            "db_version": "1.5.1"
+            "db_version": "1.6.0"
         });
         let config_json = serde_json::to_string_pretty(&default_config)
             .map_err(|e| format!("설정 파일 직렬화 실패: {}", e))?;
@@ -926,7 +926,7 @@ mod tests {
         assert!(config_path.exists());
         let config_content = fs::read_to_string(config_path).unwrap();
         let config_val: serde_json::Value = serde_json::from_str(strip_bom(&config_content)).unwrap();
-        assert_eq!(config_val.get("db_version").unwrap().as_str().unwrap(), "1.5.1");
+        assert_eq!(config_val.get("db_version").unwrap().as_str().unwrap(), "1.6.0");
 
         // Clean up
         let _ = fs::remove_dir_all(&temp_dir);

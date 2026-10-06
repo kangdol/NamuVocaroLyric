@@ -33,6 +33,15 @@
                         text: async () => '{"status":"saved"}'
                     };
                 }
+                if (urlStr === '/api/reset-all') {
+                    await invoke('reset_all_data');
+                    return {
+                        ok: true,
+                        status: 200,
+                        json: async () => ({ status: 'success' }),
+                        text: async () => '{"status":"success"}'
+                    };
+                }
                 
                 // 2. Character database loading / saving / deleting
                 if (urlStr === '/colors.json') {
@@ -411,6 +420,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Initial render
     triggerRender();
+
+    // 웹 한정 UI 초기화
+    initWebUI();
 
     // 임시 저장 복구 검사 기동
     await checkAndRestoreAutosave();
@@ -1877,6 +1889,95 @@ function initSettings() {
         btnForceExit.addEventListener('click', async () => {
             await fetch('/api/force-exit').catch(() => {});
         });
+    }
+
+    // 11. 설정 및 데이터 초기화 (Factory Reset)
+    const resetLink = document.getElementById('settings-reset-link');
+    const resetModal = document.getElementById('reset-confirm-modal');
+    const resetMsg = document.getElementById('reset-confirm-message');
+    const btnResetYes = document.getElementById('btn-reset-confirm-yes');
+    const btnResetNo = document.getElementById('btn-reset-confirm-no');
+
+    if (resetLink && resetModal && btnResetYes && btnResetNo) {
+        resetLink.addEventListener('click', () => {
+            if (resetMsg) {
+                if (window.Platform && window.Platform.isWeb && window.Platform.isWeb()) {
+                    resetMsg.innerHTML = `정말 모든 설정, 캐릭터 DB 및 저장된 가사 파일을 초기화하시겠습니까?<br><span style="color: var(--danger-color); font-weight: 700;">(복구할 수 없습니다!)</span>`;
+                } else {
+                    resetMsg.innerHTML = `정말 모든 설정과 캐릭터 DB를 초기화하시겠습니까?<br><span style="color: var(--danger-color); font-weight: 700;">(복구할 수 없습니다!)</span>`;
+                }
+            }
+            resetModal.classList.remove('hidden');
+        });
+
+        btnResetNo.addEventListener('click', () => {
+            resetModal.classList.add('hidden');
+        });
+
+        resetModal.addEventListener('click', (e) => {
+            if (e.target === resetModal) {
+                resetModal.classList.add('hidden');
+            }
+        });
+
+        btnResetYes.addEventListener('click', async () => {
+            resetModal.classList.add('hidden');
+            try {
+                if (window.Platform && window.Platform.isWeb && window.Platform.isWeb()) {
+                    // 웹 버전: config, custom character DB, 및 모든 가사 파일 삭제
+                    if (window.Platform.storage && window.Platform.storage.resetAllData) {
+                        await window.Platform.storage.resetAllData();
+                    } else {
+                        localStorage.removeItem('nvl_config');
+                        localStorage.removeItem('nvl_custom_standard');
+                        localStorage.removeItem('nvl_custom_sekai');
+                        localStorage.removeItem('nvl_custom_unit');
+                        localStorage.removeItem('nvl_lyrics_files');
+                        localStorage.removeItem('_autosave.txt');
+                        localStorage.removeItem('last_seen_patchnotes_version');
+                        localStorage.removeItem('current_song_title');
+                    }
+                } else {
+                    // 데스크톱 버전: config 및 custom DB 삭제
+                    if (window.__TAURI__) {
+                        await window.__TAURI__.invoke('reset_all_data');
+                    } else {
+                        await fetch('/api/reset-all', { method: 'POST' }).catch(() => {});
+                    }
+                }
+
+                if (modalSettings) modalSettings.classList.add('hidden');
+                showToast("모든 설정과 데이터가 초기화되었습니다. 새로고침합니다...", "success");
+                setTimeout(() => {
+                    window.location.reload();
+                }, 600);
+            } catch (err) {
+                console.error("초기화 실패:", err);
+                showToast("초기화 처리 중 오류가 발생했습니다.", "danger-bug");
+            }
+        });
+    }
+}
+
+// --- WEB-SPECIFIC UI INITIALIZATION ---
+function initWebUI() {
+    if (window.Platform && window.Platform.isWeb && window.Platform.isWeb()) {
+        document.body.classList.add('is-web');
+        const btnDesktopDownload = document.getElementById('btn-desktop-download-floating');
+        if (btnDesktopDownload) {
+            btnDesktopDownload.classList.remove('hidden');
+
+            // GitHub Releases API를 조회하여 최신 버전 태그를 툴팁에 반영
+            fetch('https://api.github.com/repos/kangdol/NamuVocaroLyric/releases/latest', {
+                headers: { 'Accept': 'application/vnd.github.v3+json' }
+            }).then(r => r.ok ? r.json() : null)
+              .then(data => {
+                  if (data && data.tag_name) {
+                      const tag = String(data.tag_name).trim();
+                      btnDesktopDownload.title = `GitHub 릴리즈 페이지에서 최신 데스크톱 버전(${tag}) 다운로드`;
+                  }
+              }).catch(() => {});
+        }
     }
 }
 
@@ -4347,39 +4448,59 @@ async function checkForUpdates() {
         const currentVersion = VERSION_OVERRIDE || (window.__TAURI__ ? await window.__TAURI__.app.getVersion() : "1.6.0");
         console.log("Update check: App current version is", currentVersion);
         
-        const url = "https://namu.wiki/w/%EC%82%AC%EC%9A%A9%EC%9E%90:kangdoi";
-        const response = await window.__TAURI__.http.fetch(url, {
-            method: 'GET',
-            responseType: 2, // ResponseType.Text (2)
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7'
+        let latestVersion = null;
+        let latestDownloadLink = null;
+
+        // 1. GitHub Releases API 우선 조회
+        const apiUrl = "https://api.github.com/repos/kangdol/NamuVocaroLyric/releases/latest";
+        try {
+            const apiRes = await window.__TAURI__.http.fetch(apiUrl, {
+                method: 'GET',
+                responseType: 1, // ResponseType.JSON
+                headers: {
+                    'User-Agent': 'NamuVocaroLyric-App',
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+
+            if (apiRes && apiRes.ok && apiRes.data) {
+                const release = apiRes.data;
+                if (release.tag_name) {
+                    latestVersion = String(release.tag_name).replace(/^[vV]/, '').trim();
+                    const installer = Array.isArray(release.assets) && release.assets.find(a => a.name && a.name.endsWith('.exe'));
+                    latestDownloadLink = (installer && installer.browser_download_url) ? installer.browser_download_url : (release.html_url || "https://github.com/kangdol/NamuVocaroLyric/releases/latest");
+                }
             }
-        });
-
-        if (!response || !response.data) {
-            console.warn("Update check: Empty response from namu.wiki.");
-            return;
+        } catch (apiErr) {
+            console.warn("Update check: GitHub API fetch failed, falling back to releases HTML:", apiErr);
         }
 
-        const html = response.data;
+        // 2. 만약 API 조회 실패 시 GitHub Releases 웹페이지 HTML 파싱 폴백
+        if (!latestVersion) {
+            const webUrl = "https://github.com/kangdol/NamuVocaroLyric/releases";
+            const webRes = await window.__TAURI__.http.fetch(webUrl, {
+                method: 'GET',
+                responseType: 2, // ResponseType.Text
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+                }
+            });
 
-        // "Patch ver - 1.5.2 [링크]" 패턴 매칭 (순수 텍스트 URL 및 <a> 태그 URL 둘 다 대응)
-        const patchRegex = /Patch\s*ver\s*-\s*(?:v)?(\d+\.\d+\.\d+(?:\.\d+)?)\s*(?:<a[^>]+href=["']([^"']+)["'][^>]*>|([^\s<"']+))/i;
-        const match = html.match(patchRegex);
-
-        if (!match) {
-            console.log("Update check: No valid patch version pattern found on wiki page.");
-            return;
+            if (webRes && webRes.data) {
+                const html = webRes.data;
+                const tagRegex = /releases\/tag\/(?:v)?(\d+\.\d+\.\d+(?:\.\d+)?)/i;
+                const match = html.match(tagRegex);
+                if (match) {
+                    latestVersion = match[1];
+                    latestDownloadLink = `https://github.com/kangdol/NamuVocaroLyric/releases/tag/v${latestVersion}`;
+                }
+            }
         }
 
-        const latestVersion = match[1];
-        let latestDownloadLink = match[2] || match[3] || "";
-
-        // 상대 경로(/w/...)일 경우 나무위키 도메인 보정
-        if (latestDownloadLink.startsWith('/')) {
-            latestDownloadLink = `https://namu.wiki${latestDownloadLink}`;
+        if (!latestVersion) {
+            console.log("Update check: Could not detect latest version from GitHub Releases.");
+            return;
         }
 
         console.log(`Update check: Detected latest version ${latestVersion}, download link: ${latestDownloadLink}`);
