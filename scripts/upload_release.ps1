@@ -1,10 +1,16 @@
 $ErrorActionPreference = "Stop"
 
-$installer = Get-ChildItem -Path . -Filter "namuvocarolyric_1.5.1_installer.exe" -Recurse | Select-Object -First 1
-if (-not $installer) {
-    throw "namuvocarolyric_1.5.1_installer.exe not found!"
+$installerPath = "src-tauri\target\release\bundle\nsis\NamuVocaroLyric_1.6.0_x64-setup.exe"
+if (-not (Test-Path $installerPath)) {
+    $installer = Get-ChildItem -Path . -Filter "namuvocarolyric_1.6.0_installer.exe" -Recurse | Select-Object -First 1
+    if (-not $installer) {
+        throw "v1.6.0 installer executable not found!"
+    }
+    $installerPath = $installer.FullName
+} else {
+    $installerPath = (Resolve-Path $installerPath).Path
 }
-$installerPath = $installer.FullName
+
 Write-Host "Found installer at: $installerPath"
 
 # 1. Get credentials from git credential helper
@@ -21,32 +27,48 @@ $headers = @{
     "User-Agent" = "NamuVocaroLyric-Deploy"
 }
 
-# 2. Check if release v1.5.1 already exists
+# 2. Check if release v1.6.0 already exists
 $release = $null
 try {
-    $release = Invoke-RestMethod -Uri "https://api.github.com/repos/kangdol/NamuVocaroLyric/releases/tags/v1.5.1" -Headers $headers -Method Get
-    Write-Host "Found existing release v1.5.1 (ID: $($release.id))"
+    $release = Invoke-RestMethod -Uri "https://api.github.com/repos/kangdol/NamuVocaroLyric/releases/tags/v1.6.0" -Headers $headers -Method Get
+    Write-Host "Found existing release v1.6.0 (ID: $($release.id))"
 } catch {
-    Write-Host "Release v1.5.1 does not exist yet. Creating..."
+    Write-Host "Release v1.6.0 does not exist yet. Creating..."
 }
 
 if (-not $release) {
+    $releaseBody = @"
+## NamuVocaroLyric v1.6.0
+
+### 🌟 주요 추가기능
+* **[웹] 브라우저 웹 서비스 대응**: GitHub Pages 배포 지원 (https://kangdol.github.io/NamuVocaroLyric/)
+* **[웹] 데스크톱 다운로드 링크**: 메인 화면 좌측 하단 플로팅 버튼 추가
+* **[공통] 설정 및 캐릭터 DB 초기화**: 설정창 우하단 데이터 초기화(Factory Reset) 기능 추가
+
+### 🛠️ 변경사항
+* **[데스크톱] 업데이트 확인**: GitHub Releases 최신 버전 자동 조회 및 원클릭 다운로드 연동
+
+---
+### ⬇️ Windows 설치 파일
+* 아래 첨부된 `namuvocarolyric_1.6.0_installer.exe`를 다운로드하여 실행하시면 설치 및 업데이트가 완료됩니다.
+"@
+
     $bodyObj = @{
-        tag_name = "v1.5.1"
+        tag_name = "v1.6.0"
         target_commitish = "master"
-        name = "v1.5.1 Release"
-        body = "## NamuVocaroLyric v1.5.1`n`n### Changes`n* Update check page updated`n`n---`n### Windows Installer`n* Download `namuvocarolyric_1.5.1_installer.exe` below and run to install."
+        name = "v1.6.0 Release"
+        body = $releaseBody
         draft = $false
         prerelease = $false
     }
     $bodyJson = $bodyObj | ConvertTo-Json -Compress
     $bytes = [System.Text.Encoding]::UTF8.GetBytes($bodyJson)
     $release = Invoke-RestMethod -Uri "https://api.github.com/repos/kangdol/NamuVocaroLyric/releases" -Headers $headers -Method Post -Body $bytes -ContentType "application/json; charset=utf-8"
-    Write-Host "Created release v1.5.1 (ID: $($release.id))"
+    Write-Host "Created release v1.6.0 (ID: $($release.id))"
 }
 
 # 3. Check if asset is already attached
-$assetName = "namuvocarolyric_1.5.1_installer.exe"
+$assetName = "namuvocarolyric_1.6.0_installer.exe"
 $existingAsset = $release.assets | Where-Object { $_.name -eq $assetName }
 if ($existingAsset) {
     Write-Host "Asset $assetName already exists (ID: $($existingAsset.id)). Deleting old asset to re-upload..."
@@ -56,7 +78,8 @@ if ($existingAsset) {
 
 # 4. Upload binary asset
 $uploadUri = ($release.upload_url -replace '\{\?name,label\}', "") + "?name=$assetName"
-Write-Host "Uploading installer ($([math]::Round($installer.Length / 1MB, 2)) MB) to GitHub Releases..."
+$fileItem = Get-Item $installerPath
+Write-Host "Uploading installer ($([math]::Round($fileItem.Length / 1MB, 2)) MB) to GitHub Releases..."
 
 $uploadHeaders = @{
     "Authorization" = "Bearer $token"
