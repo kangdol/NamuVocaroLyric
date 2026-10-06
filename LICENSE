@@ -23,5 +23,5 @@ SOFTWARE.
 ---
 
 ### Data License Notice (CC BY-NC-SA 2.0 KR)
-The character color mappings, metadata, and sample lyric translations stored in the `data/` directory are compiled from Namuwiki (https://namu.wiki) and are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Korea (CC BY-NC-SA 2.0 KR) License.
+The character color mappings, metadata, and sample lyric translations stored in the `data/` directory are compiled from Namuwiki document named 나무위키:프로젝트/음성 합성 엔진/컬러링 (https://namu.wiki/w/나무위키:프로젝트/음성 합성 엔진/컬러링) and are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Korea (CC BY-NC-SA 2.0 KR) License.
 Detailed license notices can be found in `배포 폴더/LICENSE_DATA.txt`.
