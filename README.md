@@ -22,7 +22,7 @@
 
 ## 💻 다운로드 및 설치
 
-최신 버전(v1.5.1)의 독립 실행 파일 및 설치 프로그램은 GitHub Releases에서 다운로드하실 수 있습니다.
+최신 버전의 독립 실행 파일 및 설치 프로그램은 GitHub Releases에서 다운로드하실 수 있습니다.
 
 * **[⬇️ 최신 릴리즈 다운로드](https://github.com/kangdol/NamuVocaroLyric/releases)**
 
