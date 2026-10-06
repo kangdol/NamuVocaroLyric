@@ -25,6 +25,9 @@ developing/
 buglist.txt
 dchtml.txt
 
+# Local AI pair-programming conversation folder (keep local only)
+edit conversation/
+
 # Local distribution directory (local build mirror)
 배포 폴더/
 배포 폴더.zip
