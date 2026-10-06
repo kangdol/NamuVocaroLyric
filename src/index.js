@@ -3799,14 +3799,16 @@ function initLyricsFileControls() {
 
     if (btnNew) {
         btnNew.addEventListener('click', async () => {
-            if (window.__TAURI__) {
+            if (window.Platform) {
+                Platform.openNewWindow();
+            } else if (window.__TAURI__) {
                 window.__TAURI__.invoke('open_new_window')
                     .catch(err => {
                         console.error("Failed to open new window:", err);
                         showToast("새 창을 열지 못했습니다.", 'danger-bug');
                     });
             } else {
-                showToast("Tauri 환경에서만 새 창을 열 수 있습니다.", 'info');
+                window.open(window.location.origin + window.location.pathname, '_blank');
             }
         });
     }
@@ -4235,6 +4237,11 @@ function initCloseConfirmModal() {
     const btnCancel = document.getElementById('btn-close-cancel');
 
     if (!modal || !btnSave || !btnDiscard || !btnCancel) return;
+
+    // Web 브라우저 환경 이탈(탭 닫기/새로고침) 방지 가드 등록
+    if (window.Platform && Platform.isWeb()) {
+        Platform.registerUnloadGuard(() => hasUnsavedChanges);
+    }
 
     // Tauri 백엔드로부터 가로채진 close-requested 이벤트 수신 리스너 등록
     if (window.__TAURI__) {

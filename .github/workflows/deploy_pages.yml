@@ -1,0 +1,51 @@
+name: Deploy Web Application to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Web Distribution Artifact
+        run: |
+          mkdir -p public
+          # Copy frontend application files
+          cp -r src/* public/
+          # Ensure static data files are accessible
+          mkdir -p public/data
+          cp data/*.json public/data/
+          # Also mirror patchnotes at root for legacy relative requests
+          cp data/patchnotes.json public/
+          # Prevent Jekyll from ignoring files
+          touch public/.nojekyll
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
