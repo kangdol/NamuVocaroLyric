@@ -1,0 +1,9 @@
+{
+  "theme": "light",
+  "defaultTab": "visual",
+  "font": "system",
+  "pureBlack": false,
+  "isPreviewLoggerActive": true,
+  "isTextLoggerActive": true,
+  "isDevModeActive": true
+}

@@ -1,0 +1,2152 @@
+﻿{
+    "Ken":  {
+                "color_1":  {
+                                "bg":  "#7aba4b,#16171a",
+                                "txt":  "#ffffff,#7aba4b"
+                            },
+                "color_2":  {
+                                "bg":  "#61513a,#61513a",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "MEIKO":  {
+                  "color_1":  {
+                                  "bg":  "#d80000,#16171a",
+                                  "txt":  "#ffffff,#d80000"
+                              },
+                  "color_2":  {
+                                  "bg":  "#ffeaea,#3c2e34",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "AiSuu":  {
+                  "color_1":  {
+                                  "bg":  "#5fc1c7,#16171a",
+                                  "txt":  "#ffffff,#5fc1c7"
+                              },
+                  "color_2":  {
+                                  "bg":  "#de82b2,#892458",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "타카무라 히비키":  {
+                     "color_1":  {
+                                     "bg":  "#73caae,#16171a",
+                                     "txt":  "#212529,#73caae"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#e7f4f3,#283439",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "Chika":  {
+                  "color_1":  {
+                                  "bg":  "#cd607f,#16171a",
+                                  "txt":  "#ffffff,#cd607f"
+                              },
+                  "color_2":  {
+                                  "bg":  "#eaa4be,#905471",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "유니티짱":  {
+                 "color_1":  {
+                                 "bg":  "#b8860b,#16171a",
+                                 "txt":  "#ffffff,#b8860b"
+                             },
+                 "color_2":  {
+                                 "bg":  "#36e2f0,#006873",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "유니":  {
+               "color_1":  {
+                               "bg":  "#fa6e98,#16171a",
+                               "txt":  "#ffffff,#fa6e98"
+                           },
+               "color_2":  {
+                               "bg":  "#f5fe83,#393e00",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "Saki":  {
+                 "color_1":  {
+                                 "bg":  "#4e5e2d,#4e5e2d",
+                                 "txt":  "#ffffff,#ffffff"
+                             },
+                 "color_2":  {
+                                 "bg":  "#5b7e4f,#3a5233",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "IA":  {
+               "color_1":  {
+                               "bg":  "#f096dc,#16171a",
+                               "txt":  "#ffffff,#f096dc"
+                           },
+               "color_2":  {
+                               "bg":  "#fafce7,#272a1f",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "HARUKA":  {
+                   "color_1":  {
+                                   "bg":  "#5c3d04,#5c3d04",
+                                   "txt":  "#fee113,#fee113"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fee113,#564c00",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "ROSE":  {
+                 "color_1":  {
+                                 "bg":  "#5050d2,#16171a",
+                                 "txt":  "#ffffff,#5050d2"
+                             },
+                 "color_2":  {
+                                 "bg":  "#d5dbed,#343c4f",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "시코쿠 메탄":  {
+                   "color_1":  {
+                                   "bg":  "#df4c94,#16171a",
+                                   "txt":  "#ffffff,#df4c94"
+                               },
+                   "color_2":  {
+                                   "bg":  "#e3add5,#7c4f78",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "HAL-O-ROID":  {
+                       "color_1":  {
+                                       "bg":  "#1b2e5c,#1b2e5c",
+                                       "txt":  "#b0c6fa,#b0c6fa"
+                                   },
+                       "color_2":  {
+                                       "bg":  "#d2d5d4,#3e4448",
+                                       "txt":  "#1b2e5c,#cddcff"
+                                   }
+                   },
+    "카가미네 린":  {
+                   "color_1":  {
+                                   "bg":  "#ffa500,#16171a",
+                                   "txt":  "#ffffff,#ffa500"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fffee1,#252613",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "SOLARIA":  {
+                    "color_1":  {
+                                    "bg":  "#71352b,#71352b",
+                                    "txt":  "#f5bc64,#f5bc64"
+                                },
+                    "color_2":  {
+                                    "bg":  "#f5bc64,#785000",
+                                    "txt":  "#71352b,#ffc2b3"
+                                }
+                },
+    "MIRIAM":  {
+                   "color_1":  {
+                                   "bg":  "#e9e9dd,#16171a",
+                                   "txt":  "#212529,#e9e9dd"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f5ebea,#373138",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "메이카 미코토":  {
+                    "color_1":  {
+                                    "bg":  "#bbbbff,#16171a",
+                                    "txt":  "#212529,#bbbbff"
+                                },
+                    "color_2":  {
+                                    "bg":  "#fffdf0,#23231d",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "KAITO":  {
+                  "color_1":  {
+                                  "bg":  "#0000ff,#0000ff",
+                                  "txt":  "#ffffff,#ffffff"
+                              },
+                  "color_2":  {
+                                  "bg":  "#cce8ff,#1f3a51",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "원취엔":  {
+                "color_1":  {
+                                "bg":  "#fd6abd,#16171a",
+                                "txt":  "#ffffff,#fd6abd"
+                            },
+                "color_2":  {
+                                "bg":  "#ffb2a8,#7d3e3d",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "오스카":  {
+                "color_1":  {
+                                "bg":  "#c34b45,#16171a",
+                                "txt":  "#ffffff,#c34b45"
+                            },
+                "color_2":  {
+                                "bg":  "#fbd4b2,#50341d",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "샤위야오":  {
+                 "color_1":  {
+                                 "bg":  "#Bee0a4,#16171a",
+                                 "txt":  "#212529,#Bee0a4"
+                             },
+                 "color_2":  {
+                                 "bg":  "#deede0,#2b3a35",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "ALLEN":  {
+                  "color_1":  {
+                                  "bg":  "#465157,#465157",
+                                  "txt":  "#cfe5fb,#cfe5fb"
+                              },
+                  "color_2":  {
+                                  "bg":  "#cfe5fb,#253a50",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "MAYU":  {
+                 "color_1":  {
+                                 "bg":  "#e1dfc9,#16171a",
+                                 "txt":  "#212529,#e1dfc9"
+                             },
+                 "color_2":  {
+                                 "bg":  "#fbfbee,#272923",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "SF-A2 개발코드 miki":  {
+                            "color_1":  {
+                                            "bg":  "#d65e5e,#16171a",
+                                            "txt":  "#ffffff,#d65e5e"
+                                        },
+                            "color_2":  {
+                                            "bg":  "#ffe9f4,#3c2d3b",
+                                            "txt":  "#212529,#ffffff"
+                                        }
+                        },
+    "히비키 코토":  {
+                   "color_1":  {
+                                   "bg":  "#ff6666,#16171a",
+                                   "txt":  "#ffffff,#ff6666"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ffddcc,#483129",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "YUU":  {
+                "color_1":  {
+                                "bg":  "#e5e5b5,#16171a",
+                                "txt":  "#212529,#e5e5b5"
+                            },
+                "color_2":  {
+                                "bg":  "#e7decd,#3d3931",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "즈위모커":  {
+                 "color_1":  {
+                                 "bg":  "#0275d8,#16171a",
+                                 "txt":  "#ffffff,#0275d8"
+                             },
+                 "color_2":  {
+                                 "bg":  "#93daff,#005273",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "FEE":  {
+                "color_1":  {
+                                "bg":  "#2a4288,#2a4288",
+                                "txt":  "#ecb7db,#ecb7db"
+                            },
+                "color_2":  {
+                                "bg":  "#ebe7e4,#363538",
+                                "txt":  "#2a4288,#c0d2ff"
+                            }
+            },
+    "NYL":  {
+                "color_1":  {
+                                "bg":  "#77549b,#16171a",
+                                "txt":  "#ffffff,#77549b"
+                            },
+                "color_2":  {
+                                "bg":  "#a2858f,#5b484f",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "카아이 유키":  {
+                   "color_1":  {
+                                   "bg":  "#dd4444,#16171a",
+                                   "txt":  "#ffffff,#dd4444"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f8eef6,#352f3a",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Lily":  {
+                 "color_1":  {
+                                 "bg":  "#fff888,#16171a",
+                                 "txt":  "#212529,#fff888"
+                             },
+                 "color_2":  {
+                                 "bg":  "#6d5b78,#6d5b78",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "츠루마키 마키":  {
+                    "color_1":  {
+                                    "bg":  "#fad772,#16171a",
+                                    "txt":  "#212529,#fad772"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffffff,#1c1d1f",
+                                    "txt":  "#d8262f,#ff9189"
+                                }
+                },
+    "SARAH":  {
+                  "color_1":  {
+                                  "bg":  "#511b6a,#511b6a",
+                                  "txt":  "#e2bbf0,#e2bbf0"
+                              },
+                  "color_2":  {
+                                  "bg":  "#e2bbf0,#5f4072",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "카논":  {
+               "color_1":  {
+                               "bg":  "#febe3e,#16171a",
+                               "txt":  "#ffffff,#febe3e"
+                           },
+               "color_2":  {
+                               "bg":  "#e9ef7f,#3c4000",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "CYBER DIVA":  {
+                       "color_1":  {
+                                       "bg":  "#fae900,#16171a",
+                                       "txt":  "#212529,#fae900"
+                                   },
+                       "color_2":  {
+                                       "bg":  "#f2f1db,#333428",
+                                       "txt":  "#212529,#ffffff"
+                                   }
+                   },
+    "싱천":  {
+               "color_1":  {
+                               "bg":  "#9999ff,#16171a",
+                               "txt":  "#ffffff,#9999ff"
+                           },
+               "color_2":  {
+                               "bg":  "#dfdffb,#343550",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "나츠키 카린":  {
+                   "color_1":  {
+                                   "bg":  "#9ea4c2,#16171a",
+                                   "txt":  "#ffffff,#9ea4c2"
+                               },
+                   "color_2":  {
+                                   "bg":  "#e4e5f1,#333644",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "DAINA":  {
+                  "color_1":  {
+                                  "bg":  "#ffbb88,#16171a",
+                                  "txt":  "#212529,#ffbb88"
+                              },
+                  "color_2":  {
+                                  "bg":  "#e5effa,#2a3442",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "게키야쿠":  {
+                 "color_1":  {
+                                 "bg":  "#c14344,#16171a",
+                                 "txt":  "#ffffff,#c14344"
+                             },
+                 "color_2":  {
+                                 "bg":  "#e8e2de,#393739",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "Natalie":  {
+                    "color_1":  {
+                                    "bg":  "#f18e70,#16171a",
+                                    "txt":  "#ffffff,#f18e70"
+                                },
+                    "color_2":  {
+                                    "bg":  "#f7b7a2,#774438",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "도호쿠 키리탄":  {
+                    "color_1":  {
+                                    "bg":  "#c4331d,#16171a",
+                                    "txt":  "#ffffff,#c4331d"
+                                },
+                    "color_2":  {
+                                    "bg":  "#fce6bf,#423318",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "야마다 카논":  {
+                   "color_1":  {
+                                   "bg":  "#fa76ca,#16171a",
+                                   "txt":  "#212529,#fa76ca"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ffc8ea,#552b4d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Hayden":  {
+                   "color_1":  {
+                                   "bg":  "#6B497A,#6B497A",
+                                   "txt":  "#ffffff,#ffffff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#b0d1da,#355663",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "충정":  {
+               "color_1":  {
+                               "bg":  "#91252a,#91252a",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#a8888a,#624747",
+                               "txt":  "#ffffff,#ffffff"
+                           }
+           },
+    "VY1":  {
+                "color_1":  {
+                                "bg":  "#ef837d,#16171a",
+                                "txt":  "#ffffff,#ef837d"
+                            },
+                "color_2":  {
+                                "bg":  "#fcebeb,#3a2f34",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "AVANNA":  {
+                   "color_1":  {
+                                   "bg":  "#5b9b6b,#16171a",
+                                   "txt":  "#ffffff,#5b9b6b"
+                               },
+                   "color_2":  {
+                                   "bg":  "#bee0a4,#2e4e20",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "리메":  {
+               "color_1":  {
+                               "bg":  "#ffffff,#16171a",
+                               "txt":  "#e51500,#e51500"
+                           },
+               "color_2":  {
+                               "bg":  "#aabaea,#414c71",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "츠이나 쨩":  {
+                  "color_1":  {
+                                  "bg":  "#ff8000,#16171a",
+                                  "txt":  "#ffffff,#ff8000"
+                              },
+                  "color_2":  {
+                                  "bg":  "#f6cad9,#543445",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "ONE":  {
+                "color_1":  {
+                                "bg":  "#ff7f50,#16171a",
+                                "txt":  "#ffffff,#ff7f50"
+                            },
+                "color_2":  {
+                                "bg":  "#fffaf0,#292723",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "Ruby":  {
+                 "color_1":  {
+                                 "bg":  "#fb9c7e,#16171a",
+                                 "txt":  "#212529,#fb9c7e"
+                             },
+                 "color_2":  {
+                                 "bg":  "#fcdcc5,#483225",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "코토노하 아카네":  {
+                     "color_1":  {
+                                     "bg":  "#ffccdd,#16171a",
+                                     "txt":  "#212529,#ffccdd"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#feeaee,#3b2e36",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "Chris":  {
+                  "color_1":  {
+                                  "bg":  "#0c5da5,#16171a",
+                                  "txt":  "#ffffff,#0c5da5"
+                              },
+                  "color_2":  {
+                                  "bg":  "#3c3c3d,#3c3c3d",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "스안":  {
+               "color_1":  {
+                               "bg":  "#b97449,#16171a",
+                               "txt":  "#ffffff,#b97449"
+                           },
+               "color_2":  {
+                               "bg":  "#f6ecc3,#3b3518",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "야미네 렌리":  {
+                   "color_1":  {
+                                   "bg":  "#dfd0ff,#16171a",
+                                   "txt":  "#212529,#dfd0ff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f6e6ff,#392e46",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Ci짱":  {
+                "color_1":  {
+                                "bg":  "#bb41fb,#16171a",
+                                "txt":  "#ffffff,#bb41fb"
+                            },
+                "color_2":  {
+                                "bg":  "#efd9f5,#40314c",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "prtv_0":  {
+                   "color_1":  {
+                                   "bg":  "#7b47d2,#16171a",
+                                   "txt":  "#ffffff,#7b47d2"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ffffff,#1c1d1f",
+                                   "txt":  "#7b47d2,#c3acff"
+                               }
+               },
+    "분산형 자율 골렘 리무루":  {
+                          "color_1":  {
+                                          "bg":  "#d200ff,#16171a",
+                                          "txt":  "#212529,#d200ff"
+                                      },
+                          "color_2":  {
+                                          "bg":  "#000000,#000000",
+                                          "txt":  "#ffffff,#ffffff"
+                                      }
+                      },
+    "토네 리온":  {
+                  "color_1":  {
+                                  "bg":  "#cc00ff,#16171a",
+                                  "txt":  "#ffffff,#cc00ff"
+                              },
+                  "color_2":  {
+                                  "bg":  "#f1c2b8,#63403d",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "Kaori":  {
+                  "color_1":  {
+                                  "bg":  "#ca7a26,#16171a",
+                                  "txt":  "#ffffff,#ca7a26"
+                              },
+                  "color_2":  {
+                                  "bg":  "#d6d5d6,#3f4247",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "이오리 유즈루":  {
+                    "color_1":  {
+                                    "bg":  "#f7efef,#16171a",
+                                    "txt":  "#212529,#f7efef"
+                                },
+                    "color_2":  {
+                                    "bg":  "#f9e99a,#413800",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "카나데 카논":  {
+                   "color_1":  {
+                                   "bg":  "#adf0de,#16171a",
+                                   "txt":  "#212529,#adf0de"
+                               },
+                   "color_2":  {
+                                   "bg":  "#dbd8e0,#3c3c48",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Chis-A":  {
+                   "color_1":  {
+                                   "bg":  "#fdb791,#504443",
+                                   "txt":  "#504443,#fdb791"
+                               },
+                   "color_2":  {
+                                   "bg":  "#eff1d9,#323528",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Prima":  {
+                  "color_1":  {
+                                  "bg":  "#101010,#101010",
+                                  "txt":  "#ffffff,#ffffff"
+                              },
+                  "color_2":  {
+                                  "bg":  "#b43167,#782145",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "히야마 키요테루":  {
+                     "color_1":  {
+                                     "bg":  "#43141a,#43141a",
+                                     "txt":  "#ffffff,#ffffff"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#a9aaaf,#4d4d51",
+                                     "txt":  "#ffffff,#ffffff"
+                                 }
+                 },
+    "마쿠네 나나":  {
+                   "color_1":  {
+                                   "bg":  "#e9ffc9,#16171a",
+                                   "txt":  "#212529,#e9ffc9"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f4f4f6,#2e2f36",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "사토 사사라":  {
+                   "color_1":  {
+                                   "bg":  "#f5deb3,#16171a",
+                                   "txt":  "#212529,#f5deb3"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ead6d5,#45383c",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "YOHIOloid":  {
+                      "color_1":  {
+                                      "bg":  "#f0e68c,#16171a",
+                                      "txt":  "#212529,#f0e68c"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#bababc,#696c73",
+                                      "txt":  "#212529,#ffffff"
+                                  }
+                  },
+    "나쿠모":  {
+                "color_1":  {
+                                "bg":  "#653e47,#653e47",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#ffffff,#1c1d1f",
+                                "txt":  "#1d2a40,#d3dff7"
+                            }
+            },
+    "Sachiko":  {
+                    "color_1":  {
+                                    "bg":  "#daa520,#16171a",
+                                    "txt":  "#ffffff,#daa520"
+                                },
+                    "color_2":  {
+                                    "bg":  "#a40101,#a40101",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "JUN":  {
+                "color_1":  {
+                                "bg":  "#67373d,#67373d",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#f3ca60,#644d00",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "Felicia":  {
+                    "color_1":  {
+                                    "bg":  "#fd6abd,#16171a",
+                                    "txt":  "#ffffff,#fd6abd"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffb2a8,#7d3e3d",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "Mew":  {
+                "color_1":  {
+                                "bg":  "#696969,#16171a",
+                                "txt":  "#ffffff,#696969"
+                            },
+                "color_2":  {
+                                "bg":  "#ffffff,#1c1d1f",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "AZUKI":  {
+                  "color_1":  {
+                                  "bg":  "#cb4f6a,#16171a",
+                                  "txt":  "#ffffff,#cb4f6a"
+                              },
+                  "color_2":  {
+                                  "bg":  "#dde0e9,#343945",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "쿄마치 세이카":  {
+                    "color_1":  {
+                                    "bg":  "#8fff86,#294e39",
+                                    "txt":  "#294e39,#8fff86"
+                                },
+                    "color_2":  {
+                                    "bg":  "#a7d1a9,#3c6649",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "밐빵이":  {
+                "color_1":  {
+                                "bg":  "#39c5bb,#16171a",
+                                "txt":  "#ffffff,#39c5bb"
+                            },
+                "color_2":  {
+                                "bg":  "#ecfffb,#1a2b2d",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "#kzn":  {
+                 "color_1":  {
+                                 "bg":  "#ff79d6,#16171a",
+                                 "txt":  "#ffffff,#ff79d6"
+                             },
+                 "color_2":  {
+                                 "bg":  "#c9fffd,#003a3e",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "코코":  {
+               "color_1":  {
+                               "bg":  "#ffffff,#16171a",
+                               "txt":  "#00cdeb,#00cdeb"
+                           },
+               "color_2":  {
+                               "bg":  "#cbd7ea,#354256",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "갸라코":  {
+                "color_1":  {
+                                "bg":  "#af6e4d,#16171a",
+                                "txt":  "#ffffff,#af6e4d"
+                            },
+                "color_2":  {
+                                "bg":  "#e7dbe7,#3d3644",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "옌허":  {
+               "color_1":  {
+                               "bg":  "#e0ffff,#16171a",
+                               "txt":  "#212529,#e0ffff"
+                           },
+               "color_2":  {
+                               "bg":  "#eeeced,#333439",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "AiKO":  {
+                 "color_1":  {
+                                 "bg":  "#fdd000,#16171a",
+                                 "txt":  "#ffffff,#fdd000"
+                             },
+                 "color_2":  {
+                                 "bg":  "#ffe79d,#433600",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "세카이":  {
+                "color_1":  {
+                                "bg":  "#ffffff,#7933ff",
+                                "txt":  "#7933ff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#e5e5e7,#34373d",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "ANRI":  {
+                 "color_1":  {
+                                 "bg":  "#273044,#273044",
+                                 "txt":  "#c4c4c5,#c4c4c5"
+                             },
+                 "color_2":  {
+                                 "bg":  "#cce4dc,#28403f",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "링완":  {
+               "color_1":  {
+                               "bg":  "#b8d0e0,#16171a",
+                               "txt":  "#212529,#b8d0e0"
+                           },
+               "color_2":  {
+                               "bg":  "#705098,#705098",
+                               "txt":  "#ffffff,#ffffff"
+                           }
+           },
+    "Yuma":  {
+                 "color_1":  {
+                                 "bg":  "#de562c,#16171a",
+                                 "txt":  "#ffffff,#de562c"
+                             },
+                 "color_2":  {
+                                 "bg":  "#bccd01,#4a5101",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "Ritchy":  {
+                   "color_1":  {
+                                   "bg":  "#007dd1,#16171a",
+                                   "txt":  "#ffffff,#007dd1"
+                               },
+                   "color_2":  {
+                                   "bg":  "#4e9c5e,#2e5635",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "카제히키":  {
+                 "color_1":  {
+                                 "bg":  "#5e523a,#5e523a",
+                                 "txt":  "#ffffff,#ffffff"
+                             },
+                 "color_2":  {
+                                 "bg":  "#bca574,#4f4126",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "Riku":  {
+                 "color_1":  {
+                                 "bg":  "#abb274,#16171a",
+                                 "txt":  "#ffffff,#abb274"
+                             },
+                 "color_2":  {
+                                 "bg":  "#35569c,#35569c",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "유메미 네무":  {
+                   "color_1":  {
+                                   "bg":  "#64bfa1,#16171a",
+                                   "txt":  "#ffffff,#64bfa1"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f6f6ec,#2e302d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "MAIKA":  {
+                  "color_1":  {
+                                  "bg":  "#ffffff,#16171a",
+                                  "txt":  "#212529,#ffffff"
+                              },
+                  "color_2":  {
+                                  "bg":  "#f6e1f8,#3d2f46",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "D-Lin":  {
+                  "color_1":  {
+                                  "bg":  "#ae94f4,#16171a",
+                                  "txt":  "#ffffff,#ae94f4"
+                              },
+                  "color_2":  {
+                                  "bg":  "#f76d6d,#a00808",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "flower":  {
+                   "color_1":  {
+                                   "bg":  "#8060b0,#8060b0",
+                                   "txt":  "#ffffff,#ffffff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#e8d9ff,#3c3154",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "오오에도 챵코":  {
+                    "color_1":  {
+                                    "bg":  "#7f2794,#7f2794",
+                                    "txt":  "#ffffff,#ffffff"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ef66b9,#990f62",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "요가타리 토바리":  {
+                     "color_1":  {
+                                     "bg":  "#7344d4,#16171a",
+                                     "txt":  "#ffffff,#7344d4"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#f6f3ff,#2e2d3b",
+                                     "txt":  "#7344d4,#c1b0ff"
+                                 }
+                 },
+    "칭수":  {
+               "color_1":  {
+                               "bg":  "#404241,#404241",
+                               "txt":  "#009fe3,#009fe3"
+                           },
+               "color_2":  {
+                               "bg":  "#ffffff,#1c1d1f",
+                               "txt":  "#72549f,#cfafff"
+                           }
+           },
+    "뤄톈이":  {
+                "color_1":  {
+                                "bg":  "#66ccff,#16171a",
+                                "txt":  "#ffffff,#66ccff"
+                            },
+                "color_2":  {
+                                "bg":  "#ffffff,#1c1d1f",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "네코무라 이로하":  {
+                     "color_1":  {
+                                     "bg":  "#f04040,#16171a",
+                                     "txt":  "#ffffff,#f04040"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#fabdaa,#6d3d33",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "카후":  {
+               "color_1":  {
+                               "bg":  "#ffffff,#0000ff",
+                               "txt":  "#0000ff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#d3d3e4,#3e4154",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "우타타네 피코":  {
+                    "color_1":  {
+                                    "bg":  "#31ae9e,#16171a",
+                                    "txt":  "#ffffff,#31ae9e"
+                                },
+                    "color_2":  {
+                                    "bg":  "#f5f5f5,#2d2f34",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "펑이":  {
+               "color_1":  {
+                               "bg":  "#404241,#404241",
+                               "txt":  "#aad1da,#aad1da"
+                           },
+               "color_2":  {
+                               "bg":  "#ffffff,#1c1d1f",
+                               "txt":  "#3a687a,#a0cddf"
+                           }
+           },
+    "LUMi":  {
+                 "color_1":  {
+                                 "bg":  "#75f1fb,#16171a",
+                                 "txt":  "#212529,#75f1fb"
+                             },
+                 "color_2":  {
+                                 "bg":  "#edfaff,#222e37",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "MATCHA":  {
+                   "color_1":  {
+                                   "bg":  "#758b45,#16171a",
+                                   "txt":  "#ffffff,#758b45"
+                               },
+                   "color_2":  {
+                                   "bg":  "#dee8bb,#323d1d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "NOA Hex":  {
+                    "color_1":  {
+                                    "bg":  "#e8a830,#16171a",
+                                    "txt":  "#ffffff,#e8a830"
+                                },
+                    "color_2":  {
+                                    "bg":  "#504040,#504040",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "메로우":  {
+                "color_1":  {
+                                "bg":  "#5a5edf,#16171a",
+                                "txt":  "#ffffff,#5a5edf"
+                            },
+                "color_2":  {
+                                "bg":  "#d0f7fe,#123944",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "카사네 테토":  {
+                   "color_1":  {
+                                   "bg":  "#ef7793,#16171a",
+                                   "txt":  "#ffffff,#ef7793"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f7f2df,#333228",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "긴자키 코하루":  {
+                    "color_1":  {
+                                    "bg":  "#e6c26a,#554518",
+                                    "txt":  "#554518,#e6c26a"
+                                },
+                    "color_2":  {
+                                    "bg":  "#e9e6ea,#35353d",
+                                    "txt":  "#a36094,#df97ce"
+                                }
+                },
+    "우이":  {
+               "color_1":  {
+                               "bg":  "#293770,#293770",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#f6eaea,#383137",
+                               "txt":  "#4759a5,#b1c2ff"
+                           }
+           },
+    "아오키 라피스":  {
+                    "color_1":  {
+                                    "bg":  "#1e90ff,#16171a",
+                                    "txt":  "#ffffff,#1e90ff"
+                                },
+                    "color_2":  {
+                                    "bg":  "#d5ebde,#273c37",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "아카사키 미나토":  {
+                     "color_1":  {
+                                     "bg":  "#d12222,#16171a",
+                                     "txt":  "#ffffff,#d12222"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#434862,#434862",
+                                     "txt":  "#ffffff,#ffffff"
+                                 }
+                 },
+    "웨정룽야":  {
+                 "color_1":  {
+                                 "bg":  "#55a5a5,#16171a",
+                                 "txt":  "#ffffff,#55a5a5"
+                             },
+                 "color_2":  {
+                                 "bg":  "#fcffff,#1c1f21",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "SONiKA":  {
+                   "color_1":  {
+                                   "bg":  "#66cdaa,#16171a",
+                                   "txt":  "#ffffff,#66cdaa"
+                               },
+                   "color_2":  {
+                                   "bg":  "#c7d194,#4c5725",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "오토마치 우나":  {
+                    "color_1":  {
+                                    "bg":  "#4646bb,#4646bb",
+                                    "txt":  "#ffffff,#ffffff"
+                                },
+                    "color_2":  {
+                                    "bg":  "#d9e3fd,#2d3750",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "Eri":  {
+                "color_1":  {
+                                "bg":  "#8d6ff9,#16171a",
+                                "txt":  "#ffffff,#8d6ff9"
+                            },
+                "color_2":  {
+                                "bg":  "#edaedb,#784471",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "No.7":  {
+                 "color_1":  {
+                                 "bg":  "#ffffff,#16171a",
+                                 "txt":  "#6846d8,#6846d8"
+                             },
+                 "color_2":  {
+                                 "bg":  "#ffffff,#1c1d1f",
+                                 "txt":  "#2f38c3,#b9c9ff"
+                             }
+             },
+    "pepper":  {
+                   "color_1":  {
+                                   "bg":  "#a6d3e1,#16171a",
+                                   "txt":  "#212529,#a6d3e1"
+                               },
+                   "color_2":  {
+                                   "bg":  "#cadfe4,#2b4049",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "린라이":  {
+                "color_1":  {
+                                "bg":  "#cbf064,#16171a",
+                                "txt":  "#212529,#cbf064"
+                            },
+                "color_2":  {
+                                "bg":  "#daf386,#344300",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "코무라사키 모모카":  {
+                      "color_1":  {
+                                      "bg":  "#b28ebc,#16171a",
+                                      "txt":  "#212529,#b28ebc"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#d7c3dd,#574964",
+                                      "txt":  "#212529,#ffffff"
+                                  }
+                  },
+    "kokone":  {
+                   "color_1":  {
+                                   "bg":  "#e47676,#16171a",
+                                   "txt":  "#ffffff,#e47676"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f8cbc3,#563635",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "즌다몬":  {
+                "color_1":  {
+                                "bg":  "#b8eda9,#16171a",
+                                "txt":  "#212529,#b8eda9"
+                            },
+                "color_2":  {
+                                "bg":  "#e9fdc6,#26360d",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "LOLA":  {
+                 "color_1":  {
+                                 "bg":  "#713744,#713744",
+                                 "txt":  "#ffffff,#ffffff"
+                             },
+                 "color_2":  {
+                                 "bg":  "#c4a6aa,#684549",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "도호쿠 즌코":  {
+                   "color_1":  {
+                                   "bg":  "#2e8b57,#16171a",
+                                   "txt":  "#ffffff,#2e8b57"
+                               },
+                   "color_2":  {
+                                   "bg":  "#cdfbc3,#123f17",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "신화":  {
+               "color_1":  {
+                               "bg":  "#8070ee,#16171a",
+                               "txt":  "#ffffff,#8070ee"
+                           },
+               "color_2":  {
+                               "bg":  "#b8e1f0,#194455",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "prtv_3":  {
+                   "color_1":  {
+                                   "bg":  "#864a2f,#864a2f",
+                                   "txt":  "#ffffff,#ffffff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#f7a565,#764214",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "Ninezero":  {
+                     "color_1":  {
+                                     "bg":  "#898888,#16171a",
+                                     "txt":  "#ffffff,#898888"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#be898a,#6b4343",
+                                     "txt":  "#ffffff,#ffffff"
+                                 }
+                 },
+    "Kevin":  {
+                  "color_1":  {
+                                  "bg":  "#404241,#404241",
+                                  "txt":  "#b3ce71,#b3ce71"
+                              },
+                  "color_2":  {
+                                  "bg":  "#ffffff,#1c1d1f",
+                                  "txt":  "#486a9e,#9dc1f9"
+                              }
+              },
+    "DEX":  {
+                "color_1":  {
+                                "bg":  "#eef2fe,#16171a",
+                                "txt":  "#212529,#eef2fe"
+                            },
+                "color_2":  {
+                                "bg":  "#7986c7,#3a3a78",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "prtv_1":  {
+                   "color_1":  {
+                                   "bg":  "#aebdb3,#16171a",
+                                   "txt":  "#ffffff,#aebdb3"
+                               },
+                   "color_2":  {
+                                   "bg":  "#927ba6,#5a4667",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "모천":  {
+               "color_1":  {
+                               "bg":  "#404241,#404241",
+                               "txt":  "#9b9da4,#9b9da4"
+                           },
+               "color_2":  {
+                               "bg":  "#ffffff,#1c1d1f",
+                               "txt":  "#2b4b9b,#b7cdff"
+                           }
+           },
+    "CUL":  {
+                "color_1":  {
+                                "bg":  "#fd4344,#16171a",
+                                "txt":  "#ffffff,#fd4344"
+                            },
+                "color_2":  {
+                                "bg":  "#bb9f5c,#5d4b27",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "창충":  {
+               "color_1":  {
+                               "bg":  "#182c31,#182c31",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#a7d7c1,#2a5c4f",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "메이카 히메":  {
+                   "color_1":  {
+                                   "bg":  "#ffbbcc,#16171a",
+                                   "txt":  "#212529,#ffbbcc"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fffdf0,#23231d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "가젠":  {
+               "color_1":  {
+                               "bg":  "#383838,#383838",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#9f9f9f,#4d4d4d",
+                               "txt":  "#ffffff,#ffffff"
+                           }
+           },
+    "카나토 메루":  {
+                   "color_1":  {
+                                   "bg":  "#e4557e,#16171a",
+                                   "txt":  "#ffffff,#e4557e"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ffbbcb,#693448",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "코하루 릿카":  {
+                   "color_1":  {
+                                   "bg":  "#9ea4c2,#16171a",
+                                   "txt":  "#ffffff,#9ea4c2"
+                               },
+                   "color_2":  {
+                                   "bg":  "#aca9b4,#514e5a",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "아르스로이드":  {
+                   "color_1":  {
+                                   "bg":  "#c7604f,#16171a",
+                                   "txt":  "#ffffff,#c7604f"
+                               },
+                   "color_2":  {
+                                   "bg":  "#a39e80,#504c3f",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Bruno":  {
+                  "color_1":  {
+                                  "bg":  "#0699de,#16171a",
+                                  "txt":  "#ffffff,#0699de"
+                              },
+                  "color_2":  {
+                                  "bg":  "#afdbf4,#1b4963",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "아키코로이드짱":  {
+                    "color_1":  {
+                                    "bg":  "#5373b7,#16171a",
+                                    "txt":  "#ffffff,#5373b7"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ebedec,#313539",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "Amy":  {
+                "color_1":  {
+                                "bg":  "#ff1493,#16171a",
+                                "txt":  "#ffffff,#ff1493"
+                            },
+                "color_2":  {
+                                "bg":  "#77777a,#4c4c4d",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "가쿠포이드":  {
+                  "color_1":  {
+                                  "bg":  "#594d9e,#594d9e",
+                                  "txt":  "#ffffff,#ffffff"
+                              },
+                  "color_2":  {
+                                  "bg":  "#86c9d0,#2d7581",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "모칭셴":  {
+                "color_1":  {
+                                "bg":  "#8000a0,#8000a0",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#feed65,#464000",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "HALO":  {
+                 "color_1":  {
+                                 "bg":  "#f9dc1e,#16171a",
+                                 "txt":  "#212529,#f9dc1e"
+                             },
+                 "color_2":  {
+                                 "bg":  "#e4e2e1,#36383c",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "Ayame":  {
+                  "color_1":  {
+                                  "bg":  "#62f6ee,#16171a",
+                                  "txt":  "#212529,#62f6ee"
+                              },
+                  "color_2":  {
+                                  "bg":  "#ebb8ea,#663c6d",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "이시":  {
+               "color_1":  {
+                               "bg":  "#c81048,#16171a",
+                               "txt":  "#ffffff,#c81048"
+                           },
+               "color_2":  {
+                               "bg":  "#a8e8f8,#004454",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "하루노 소라":  {
+                   "color_1":  {
+                                   "bg":  "#ffccbb,#16171a",
+                                   "txt":  "#212529,#ffccbb"
+                               },
+                   "color_2":  {
+                                   "bg":  "#eeeeff,#2f3143",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "PASTEL":  {
+                   "color_1":  {
+                                   "bg":  "#51c995,#16171a",
+                                   "txt":  "#ffffff,#51c995"
+                               },
+                   "color_2":  {
+                                   "bg":  "#e7fccc,#253716",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "multi":  {
+                  "color_1":  {
+                                  "bg":  "#ffffff,#16171a",
+                                  "txt":  "#46b24d,#46b24d"
+                              },
+                  "color_2":  {
+                                  "bg":  "#ffffff,#1c1d1f",
+                                  "txt":  "#445cd1,#a6bbff"
+                              }
+              },
+    "청샤오":  {
+                "color_1":  {
+                                "bg":  "#e36a23,#16171a",
+                                "txt":  "#ffffff,#e36a23"
+                            },
+                "color_2":  {
+                                "bg":  "#4d9ac7,#265a78",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "Jin":  {
+                "color_1":  {
+                                "bg":  "#316d97,#16171a",
+                                "txt":  "#ffffff,#316d97"
+                            },
+                "color_2":  {
+                                "bg":  "#bfd4e2,#354b5b",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "긴사키 야마토":  {
+                    "color_1":  {
+                                    "bg":  "#474747,#474747",
+                                    "txt":  "#c3c3c3,#c3c3c3"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ebebeb,#32353a",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "시몬 토파즈":  {
+                   "color_1":  {
+                                   "bg":  "#4c2b51,#4c2b51",
+                                   "txt":  "#ffffff,#ffffff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#b9a9c3,#554360",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "BIG AL":  {
+                   "color_1":  {
+                                   "bg":  "#896724,#16171a",
+                                   "txt":  "#ffffff,#896724"
+                               },
+                   "color_2":  {
+                                   "bg":  "#efc000,#796100",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "prtv_2":  {
+                   "color_1":  {
+                                   "bg":  "#636363,#16171a",
+                                   "txt":  "#ffffff,#636363"
+                               },
+                   "color_2":  {
+                                   "bg":  "#636363,#636363",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "미라이 코마치":  {
+                    "color_1":  {
+                                    "bg":  "#ff5c00,#16171a",
+                                    "txt":  "#ffffff,#ff5c00"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffbf00,#785800",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "안샤오":  {
+                "color_1":  {
+                                "bg":  "#404241,#404241",
+                                "txt":  "#f29101,#f29101"
+                            },
+                "color_2":  {
+                                "bg":  "#ffffff,#1c1d1f",
+                                "txt":  "#914e85,#eea2dc"
+                            }
+            },
+    "메구리네 루카":  {
+                    "color_1":  {
+                                    "bg":  "#ffc0cb,#16171a",
+                                    "txt":  "#212529,#ffc0cb"
+                                },
+                    "color_2":  {
+                                    "bg":  "#fff2f4,#332c32",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "LEON":  {
+                 "color_1":  {
+                                 "bg":  "#395ecc,#16171a",
+                                 "txt":  "#ffffff,#395ecc"
+                             },
+                 "color_2":  {
+                                 "bg":  "#bed5e8,#32495e",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "OLIVER":  {
+                   "color_1":  {
+                                   "bg":  "#000088,#000088",
+                                   "txt":  "#ffffff,#ffffff"
+                               },
+                   "color_2":  {
+                                   "bg":  "#607384,#424f5c",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "도호쿠 이타코":  {
+                    "color_1":  {
+                                    "bg":  "#90e1ff,#9e3f40",
+                                    "txt":  "#9e3f40,#90e1ff"
+                                },
+                    "color_2":  {
+                                    "bg":  "#fdf4f6,#330a10",
+                                    "txt":  "#e3017e,#ff7faf"
+                                }
+                },
+    "GUMI from Megpoid":  {
+                              "color_1":  {
+                                              "bg":  "#39ca25,#16171a",
+                                              "txt":  "#ffffff,#39ca25"
+                                          },
+                              "color_2":  {
+                                              "bg":  "#e4f7ba,#2a3a09",
+                                              "txt":  "#212529,#ffffff"
+                                          }
+                          },
+    "코토노하 아오이":  {
+                     "color_1":  {
+                                     "bg":  "#abcbef,#16171a",
+                                     "txt":  "#212529,#abcbef"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#ddeeff,#263648",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "SAROS":  {
+                  "color_1":  {
+                                  "bg":  "#f0b848,#f0b848",
+                                  "txt":  "#212529,#212529"
+                              },
+                  "color_2":  {
+                                  "bg":  "#502028,#502028",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "nagi":  {
+                 "color_1":  {
+                                 "bg":  "#353c43,#353c43",
+                                 "txt":  "#ffffff,#ffffff"
+                             },
+                 "color_2":  {
+                                 "bg":  "#6b7887,#465059",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "Ryo":  {
+                "color_1":  {
+                                "bg":  "#404241,#404241",
+                                "txt":  "#eb6238,#eb6238"
+                            },
+                "color_2":  {
+                                "bg":  "#ffffff,#1c1d1f",
+                                "txt":  "#594695,#cdc1ff"
+                            }
+            },
+    "츠위":  {
+               "color_1":  {
+                               "bg":  "#862e3d,#862e3d",
+                               "txt":  "#212529,#212529"
+                           },
+               "color_2":  {
+                               "bg":  "#f48d99,#9c1122",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "VY2":  {
+                "color_1":  {
+                                "bg":  "#dd9030,#16171a",
+                                "txt":  "#ffffff,#dd9030"
+                            },
+                "color_2":  {
+                                "bg":  "#e2ddce,#3c3b34",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "키자키 아이리":  {
+                    "color_1":  {
+                                    "bg":  "#fdba60,#6d4013",
+                                    "txt":  "#6d4013,#fdba60"
+                                },
+                    "color_2":  {
+                                    "bg":  "#9c9c9c,#4f4f4f",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "CYBER SONGMAN":  {
+                          "color_1":  {
+                                          "bg":  "#521676,#521676",
+                                          "txt":  "#ffffff,#ffffff"
+                                      },
+                          "color_2":  {
+                                          "bg":  "#00a5da,#005470",
+                                          "txt":  "#ffffff,#ffffff"
+                                      }
+                      },
+    "하이이":  {
+                "color_1":  {
+                                "bg":  "#3e507d,#3e507d",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#dbf6fd,#1d3641",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "ASTERIAN":  {
+                     "color_1":  {
+                                     "bg":  "#1e1a79,#1e1a79",
+                                     "txt":  "#ffffff,#ffffff"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#8a92eb,#1c28a6",
+                                     "txt":  "#ffffff,#ffffff"
+                                 }
+                 },
+    "웨이슈":  {
+                "color_1":  {
+                                "bg":  "#e05858,#16171a",
+                                "txt":  "#ffffff,#e05858"
+                            },
+                "color_2":  {
+                                "bg":  "#702038,#702038",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "요코":  {
+               "color_1":  {
+                               "bg":  "#185a71,#185a71",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#ffffff,#1c1d1f",
+                               "txt":  "#185a71,#9ed8ef"
+                           }
+           },
+    "아논":  {
+               "color_1":  {
+                               "bg":  "#fece6e,#16171a",
+                               "txt":  "#212529,#fece6e"
+                           },
+               "color_2":  {
+                               "bg":  "#fdfdfb,#212223",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "후타바 미나토":  {
+                    "color_1":  {
+                                    "bg":  "#4b7cb7,#16171a",
+                                    "txt":  "#ffffff,#4b7cb7"
+                                },
+                    "color_2":  {
+                                    "bg":  "#789bbe,#35516e",
+                                    "txt":  "#ffffff,#ffffff"
+                                }
+                },
+    "가챠포이드":  {
+                  "color_1":  {
+                                  "bg":  "#00ad43,#16171a",
+                                  "txt":  "#ffffff,#00ad43"
+                              },
+                  "color_2":  {
+                                  "bg":  "#bedf90,#335107",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "코코로보":  {
+                 "color_1":  {
+                                 "bg":  "#f9c7d0,#16171a",
+                                 "txt":  "#212529,#f9c7d0"
+                             },
+                 "color_2":  {
+                                 "bg":  "#fdeaec,#3b2f35",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "유즈키 유카리":  {
+                    "color_1":  {
+                                    "bg":  "#ccb5f7,#16171a",
+                                    "txt":  "#ffffff,#ccb5f7"
+                                },
+                    "color_2":  {
+                                    "bg":  "#fff2ff,#322a38",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "하츠네 미쿠":  {
+                   "color_1":  {
+                                   "bg":  "#39c5bb,#16171a",
+                                   "txt":  "#ffffff,#39c5bb"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ecfffb,#1a2b2d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Fukase":  {
+                   "color_1":  {
+                                   "bg":  "#ff0218,#16171a",
+                                   "txt":  "#ffffff,#ff0218"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fffee9,#232418",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Tonio":  {
+                  "color_1":  {
+                                  "bg":  "#708090,#16171a",
+                                  "txt":  "#ffffff,#708090"
+                              },
+                  "color_2":  {
+                                  "bg":  "#bfa37c,#5e482c",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              },
+    "쉬엔위":  {
+                "color_1":  {
+                                "bg":  "#1f355f,#1f355f",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#758091,#4b4f58",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "미야마이 모카":  {
+                    "color_1":  {
+                                    "bg":  "#88a7c1,#16171a",
+                                    "txt":  "#ffffff,#88a7c1"
+                                },
+                    "color_2":  {
+                                    "bg":  "#e4e5f1,#333644",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "ROSA":  {
+                 "color_1":  {
+                                 "bg":  "#b3546d,#16171a",
+                                 "txt":  "#ffffff,#b3546d"
+                             },
+                 "color_2":  {
+                                 "bg":  "#e8b0c0,#7d4f62",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "Rana":  {
+                 "color_1":  {
+                                 "bg":  "#ffbbdd,#16171a",
+                                 "txt":  "#212529,#ffbbdd"
+                             },
+                 "color_2":  {
+                                 "bg":  "#f9ffff,#1c2124",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "스즈키 츠즈미":  {
+                    "color_1":  {
+                                    "bg":  "#6699cc,#16171a",
+                                    "txt":  "#ffffff,#6699cc"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffffff,#1c1d1f",
+                                    "txt":  "#3762b4,#a0c2ff"
+                                }
+                },
+    "Sheena":  {
+                   "color_1":  {
+                                   "bg":  "#77549b,#16171a",
+                                   "txt":  "#ffffff,#77549b"
+                               },
+                   "color_2":  {
+                                   "bg":  "#a2858f,#62474d",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "타카하시":  {
+                 "color_1":  {
+                                 "bg":  "#a08984,#16171a",
+                                 "txt":  "#ffffff,#a08984"
+                             },
+                 "color_2":  {
+                                 "bg":  "#ffffff,#1c1d1f",
+                                 "txt":  "#a08984,#a08984"
+                             }
+             },
+    "Clara":  {
+                  "color_1":  {
+                                  "bg":  "#ffaa99,#16171a",
+                                  "txt":  "#ffffff,#ffaa99"
+                              },
+                  "color_2":  {
+                                  "bg":  "#ffccc2,#573230",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "MYK-IV":  {
+                   "color_1":  {
+                                   "bg":  "#ffffff,#16171a",
+                                   "txt":  "#ff2e7e,#ff2e7e"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fac6e2,#57304d",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "시로사키 유우다이":  {
+                      "color_1":  {
+                                      "bg":  "#aacaeb,#575c61",
+                                      "txt":  "#575c61,#aacaeb"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#bce9f8,#0e3f50",
+                                      "txt":  "#212529,#ffffff"
+                                  }
+                  },
+    "Sweet ANN":  {
+                      "color_1":  {
+                                      "bg":  "#cea73d,#16171a",
+                                      "txt":  "#ffffff,#cea73d"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#fefefe,#1e1f22",
+                                      "txt":  "#212529,#ffffff"
+                                  }
+                  },
+    "하루":  {
+               "color_1":  {
+                               "bg":  "#ffffff,#16171a",
+                               "txt":  "#3cd705,#3cd705"
+                           },
+               "color_2":  {
+                               "bg":  "#b0f0fc,#00404c",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "카스카베 츠무기":  {
+                     "color_1":  {
+                                     "bg":  "#ffcd31,#6c3c24",
+                                     "txt":  "#6c3c24,#ffcd31"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#fff597,#3d3800",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "엘리노어 포르테":  {
+                     "color_1":  {
+                                     "bg":  "#cc3c66,#16171a",
+                                     "txt":  "#ffffff,#cc3c66"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#e7e6f6,#333445",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "하나쿠마 치후유":  {
+                     "color_1":  {
+                                     "bg":  "#464559,#464559",
+                                     "txt":  "#9bcaae,#9bcaae"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#d1dcd8,#344143",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "JSUT":  {
+                 "color_1":  {
+                                 "bg":  "#108b95,#16171a",
+                                 "txt":  "#ffffff,#108b95"
+                             },
+                 "color_2":  {
+                                 "bg":  "#ceadbd,#83677a",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "POPY":  {
+                 "color_1":  {
+                                 "bg":  "#fa006e,#16171a",
+                                 "txt":  "#ffffff,#fa006e"
+                             },
+                 "color_2":  {
+                                 "bg":  "#fcedf4,#372e38",
+                                 "txt":  "#212529,#ffffff"
+                             }
+             },
+    "후리모맨":  {
+                 "color_1":  {
+                                 "bg":  "#2b919f,#16171a",
+                                 "txt":  "#ffffff,#2b919f"
+                             },
+                 "color_2":  {
+                                 "bg":  "#88a0c4,#394f74",
+                                 "txt":  "#ffffff,#ffffff"
+                             }
+             },
+    "안도 유게":  {
+                  "color_1":  {
+                                  "bg":  "#82c4dc,#16171a",
+                                  "txt":  "#ffffff,#82c4dc"
+                              },
+                  "color_2":  {
+                                  "bg":  "#e6f2fe,#283341",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "키루네":  {
+                "color_1":  {
+                                "bg":  "#7e50b3,#16171a",
+                                "txt":  "#ffffff,#7e50b3"
+                            },
+                "color_2":  {
+                                "bg":  "#fed472,#564000",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "WIL":  {
+                "color_1":  {
+                                "bg":  "#6c7676,#16171a",
+                                "txt":  "#ffffff,#6c7676"
+                            },
+                "color_2":  {
+                                "bg":  "#c0c0bb,#606364",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "메를리":  {
+                "color_1":  {
+                                "bg":  "#734596,#734596",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#e47eae,#8f1e53",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "미도리자키 카스미":  {
+                      "color_1":  {
+                                      "bg":  "#92d971,#b16d3f",
+                                      "txt":  "#b16d3f,#92d971"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#ffffff,#1c1d1f",
+                                      "txt":  "#b16d3f,#e39b6d"
+                                  }
+                  },
+    "시유":  {
+               "color_1":  {
+                               "bg":  "#ff8c00,#16171a",
+                               "txt":  "#ffffff,#ff8c00"
+                           },
+               "color_2":  {
+                               "bg":  "#fefad2,#2f2d12",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "무신":  {
+               "color_1":  {
+                               "bg":  "#555972,#555972",
+                               "txt":  "#ffffff,#ffffff"
+                           },
+               "color_2":  {
+                               "bg":  "#d1d2f3,#3c3f5e",
+                               "txt":  "#212529,#ffffff"
+                           }
+           },
+    "겐부":  {
+               "color_1":  {
+                               "bg":  "#e0c956,#16171a",
+                               "txt":  "#ffffff,#e0c956"
+                           },
+               "color_2":  {
+                               "bg":  "#a0c5a6,#34553d",
+                               "txt":  "#ffffff,#ffffff"
+                           }
+           },
+    "AKITO":  {
+                  "color_1":  {
+                                  "bg":  "#004445,#004445",
+                                  "txt":  "#abfbf2,#abfbf2"
+                              },
+                  "color_2":  {
+                                  "bg":  "#abfbf2,#004040",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "키즈나 아카리":  {
+                    "color_1":  {
+                                    "bg":  "#f59700,#16171a",
+                                    "txt":  "#ffffff,#f59700"
+                                },
+                    "color_2":  {
+                                    "bg":  "#e3dedc,#3a393c",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "아다치 레이":  {
+                   "color_1":  {
+                                   "bg":  "#ff7100,#16171a",
+                                   "txt":  "#ffffff,#ff7100"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fee9dc,#3e302b",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "카자마츠리 아사히":  {
+                      "color_1":  {
+                                      "bg":  "#ee495d,#16171a",
+                                      "txt":  "#212529,#ee495d"
+                                  },
+                      "color_2":  {
+                                      "bg":  "#ffc5c5,#5e3339",
+                                      "txt":  "#212529,#ffffff"
+                                  }
+                  },
+    "용예 Minus":  {
+                     "color_1":  {
+                                     "bg":  "#271a44,#271a44",
+                                     "txt":  "#ffffff,#ffffff"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#b9abd6,#52486a",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "웨정링":  {
+                "color_1":  {
+                                "bg":  "#800000,#800000",
+                                "txt":  "#ffffff,#ffffff"
+                            },
+                "color_2":  {
+                                "bg":  "#ff161b,#940002",
+                                "txt":  "#ffffff,#ffffff"
+                            }
+            },
+    "Mai":  {
+                "color_1":  {
+                                "bg":  "#ec3f6d,#16171a",
+                                "txt":  "#ffffff,#ec3f6d"
+                            },
+                "color_2":  {
+                                "bg":  "#fceb74,#443e00",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "KYO":  {
+                "color_1":  {
+                                "bg":  "#938363,#16171a",
+                                "txt":  "#ffffff,#938363"
+                            },
+                "color_2":  {
+                                "bg":  "#e1decf,#3b3b34",
+                                "txt":  "#212529,#ffffff"
+                            }
+            },
+    "Po-uta":  {
+                   "color_1":  {
+                                   "bg":  "#d8b76f,#16171a",
+                                   "txt":  "#ffffff,#d8b76f"
+                               },
+                   "color_2":  {
+                                   "bg":  "#75942f,#44551b",
+                                   "txt":  "#ffffff,#ffffff"
+                               }
+               },
+    "카가미네 렌":  {
+                   "color_1":  {
+                                   "bg":  "#ffe211,#16171a",
+                                   "txt":  "#212529,#ffe211"
+                               },
+                   "color_2":  {
+                                   "bg":  "#fffce9,#27261c",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "Weina":  {
+                  "color_1":  {
+                                  "bg":  "#af8d37,#16171a",
+                                  "txt":  "#ffffff,#af8d37"
+                              },
+                  "color_2":  {
+                                  "bg":  "#d13632,#93231f",
+                                  "txt":  "#ffffff,#ffffff"
+                              }
+              }
+}

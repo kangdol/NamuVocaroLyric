@@ -1,0 +1,202 @@
+﻿{
+    "히노모리 시호":  {
+                    "color_1":  {
+                                    "bg":  "#bbdd22,#16171a",
+                                    "txt":  "#ffffff,#bbdd22"
+                                },
+                    "color_2":  {
+                                    "bg":  "#f6fdd7,#282f16",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "모모이 아이리":  {
+                    "color_1":  {
+                                    "bg":  "#ffaacc,#16171a",
+                                    "txt":  "#ffffff,#ffaacc"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffddeb,#452d3e",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "아키야마 미즈키":  {
+                     "color_1":  {
+                                     "bg":  "#ddaacc,#16171a",
+                                     "txt":  "#ffffff,#ddaacc"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#ffe5ed,#3f2e39",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "히노모리 시즈쿠":  {
+                     "color_1":  {
+                                     "bg":  "#99eedd,#16171a",
+                                     "txt":  "#212529,#99eedd"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#e4f9f5,#213436",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "텐마 사키":  {
+                  "color_1":  {
+                                  "bg":  "#ffdd44,#16171a",
+                                  "txt":  "#212529,#ffdd44"
+                              },
+                  "color_2":  {
+                                  "bg":  "#fffbbd,#333100",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "시노노메 에나":  {
+                    "color_1":  {
+                                    "bg":  "#ccaa88,#16171a",
+                                    "txt":  "#ffffff,#ccaa88"
+                                },
+                    "color_2":  {
+                                    "bg":  "#e9d9ca,#433a33",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "아사히나 마후유":  {
+                     "color_1":  {
+                                     "bg":  "#8888cc,#16171a",
+                                     "txt":  "#ffffff,#8888cc"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#d2d2f0,#3d3f5c",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "요이사키 카나데":  {
+                     "color_1":  {
+                                     "bg":  "#bb6688,#16171a",
+                                     "txt":  "#ffffff,#bb6688"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#f0c7d7,#57384b",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "하나사토 미노리":  {
+                     "color_1":  {
+                                     "bg":  "#ffccaa,#16171a",
+                                     "txt":  "#212529,#ffccaa"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#fff4ec,#322c2b",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "오오토리 에무":  {
+                    "color_1":  {
+                                    "bg":  "#ff66bb,#16171a",
+                                    "txt":  "#ffffff,#ff66bb"
+                                },
+                    "color_2":  {
+                                    "bg":  "#ffd2eb,#4c2c45",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "쿠사나기 네네":  {
+                    "color_1":  {
+                                    "bg":  "#33dd99,#16171a",
+                                    "txt":  "#ffffff,#33dd99"
+                                },
+                    "color_2":  {
+                                    "bg":  "#c7f5e3,#0d3e36",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "키리타니 하루카":  {
+                     "color_1":  {
+                                     "bg":  "#99ccff,#16171a",
+                                     "txt":  "#212529,#99ccff"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#e7f3ff,#273341",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "아즈사와 코하네":  {
+                     "color_1":  {
+                                     "bg":  "#ff6699,#16171a",
+                                     "txt":  "#ffffff,#ff6699"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#ffd8e5,#492d3d",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "모치즈키 호나미":  {
+                     "color_1":  {
+                                     "bg":  "#ee6666,#16171a",
+                                     "txt":  "#ffffff,#ee6666"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#ffe5ee,#3f2e3a",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "시라이시 안":  {
+                   "color_1":  {
+                                   "bg":  "#00bbdd,#16171a",
+                                   "txt":  "#ffffff,#00bbdd"
+                               },
+                   "color_2":  {
+                                   "bg":  "#b1e4ec,#0a4552",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "호시노 이치카":  {
+                    "color_1":  {
+                                    "bg":  "#33aaee,#16171a",
+                                    "txt":  "#ffffff,#33aaee"
+                                },
+                    "color_2":  {
+                                    "bg":  "#c8ecff,#173b4f",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "시노노메 아키토":  {
+                     "color_1":  {
+                                     "bg":  "#ff7722,#16171a",
+                                     "txt":  "#ffffff,#ff7722"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#fccfb2,#553522",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "카미시로 루이":  {
+                    "color_1":  {
+                                    "bg":  "#bb88ee,#16171a",
+                                    "txt":  "#ffffff,#bb88ee"
+                                },
+                    "color_2":  {
+                                    "bg":  "#dcc5f3,#403054",
+                                    "txt":  "#212529,#ffffff"
+                                }
+                },
+    "텐마 츠카사":  {
+                   "color_1":  {
+                                   "bg":  "#ffbb00,#16171a",
+                                   "txt":  "#ffffff,#ffbb00"
+                               },
+                   "color_2":  {
+                                   "bg":  "#ffe9ae,#423300",
+                                   "txt":  "#212529,#ffffff"
+                               }
+               },
+    "아오야기 토우야":  {
+                     "color_1":  {
+                                     "bg":  "#0077dd,#16171a",
+                                     "txt":  "#ffffff,#0077dd"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#a1caec,#1b3952",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 }
+}

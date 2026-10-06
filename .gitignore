@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Rust / Tauri build artifacts
+target/
+src-tauri/target/
+**/*.rs.bk
+
+# Executables & Installers (hosted on GitHub Releases, not git repo)
+*.exe
+*.msi
+*.zip
+
+# Local backup & test folders
+backup_original/
+backup_v1.5.0/
+NamuVocaroLyric_*_Test/
+oldinstaller/
+logs/
+scratch/
+developing/
+buglist.txt
+dchtml.txt
+
+# Local distribution directory (local build mirror)
+배포 폴더/
+배포 폴더.zip
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

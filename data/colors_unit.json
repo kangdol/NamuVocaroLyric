@@ -1,0 +1,52 @@
+﻿{
+    "아논 카논":  {
+                  "color_1":  {
+                                  "bg":  "#febe3e,#16171a",
+                                  "txt":  "#ffffff,#febe3e"
+                              },
+                  "color_2":  {
+                                  "bg":  "#f1eb71,#434100",
+                                  "txt":  "#212529,#ffffff"
+                              }
+              },
+    "ZOLA PROJECT":  {
+                         "color_1":  {
+                                         "bg":  "#dbdbdb,#16171a",
+                                         "txt":  "#212529,#dbdbdb"
+                                     },
+                         "color_2":  {
+                                         "bg":  "#e8e7e5,#34363a",
+                                         "txt":  "#212529,#ffffff"
+                                     }
+                     },
+    "메이카 히메·미코토":  {
+                       "color_1":  {
+                                       "bg":  "#e5307d,#16171a",
+                                       "txt":  "#ffffff,#e5307d"
+                                   },
+                       "color_2":  {
+                                       "bg":  "#fffdf0,#23231d",
+                                       "txt":  "#212529,#ffffff"
+                                   }
+                   },
+    "카가미네 린·렌":  {
+                     "color_1":  {
+                                     "bg":  "#ffcc00,#16171a",
+                                     "txt":  "#ffffff,#ffcc00"
+                                 },
+                     "color_2":  {
+                                     "bg":  "#fefdcd,#2b2b06",
+                                     "txt":  "#212529,#ffffff"
+                                 }
+                 },
+    "코토노하 아카네·아오이":  {
+                         "color_1":  {
+                                         "bg":  "#d5cce6,#16171a",
+                                         "txt":  "#212529,#d5cce6"
+                                     },
+                         "color_2":  {
+                                         "bg":  "#eeecf7,#323240",
+                                         "txt":  "#212529,#ffffff"
+                                     }
+                     }
+}

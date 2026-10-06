@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NamuVocaroLyric - 업데이트 알림창 디자인 프리뷰</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Slate 테마 기반 공통 CSS 변수 설정 */
+        :root {
+            /* Dark Mode (Default) */
+            --bg-body: #0d0e12;
+            --bg-app: #151720;
+            --bg-pane: #1b1e2a;
+            --bg-pane-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f1f3f9;
+            --text-secondary: #a0a5b5;
+            --text-muted: #6e7587;
+            --accent-color: #39c5bb; /* Miku Teal */
+            --accent-hover: #2eb0a6;
+            --btn-primary-bg: #39c5bb;
+            --btn-primary-text: #0d0e12;
+            --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+            --btn-secondary-border: rgba(255, 255, 255, 0.15);
+            --modal-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            --card-bg: rgba(27, 30, 42, 0.85);
+        }
+
+        /* Light Mode */
+        .light-mode {
+            --bg-body: #f4f6fa;
+            --bg-app: #ffffff;
+            --bg-pane: #ffffff;
+            --bg-pane-border: rgba(0, 0, 0, 0.08);
+            --text-primary: #1e2229;
+            --text-secondary: #5c6270;
+            --text-muted: #8b92a3;
+            --accent-color: #39c5bb;
+            --accent-hover: #2eb0a6;
+            --btn-primary-bg: #39c5bb;
+            --btn-primary-text: #ffffff;
+            --btn-secondary-bg: #f5f6f8;
+            --btn-secondary-border: rgba(0, 0, 0, 0.12);
+            --modal-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 상단 테마 제어 헤더 */
+        .preview-header {
+            position: absolute;
+            top: 2rem;
+            z-index: 10;
+            display: flex;
+            gap: 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.4rem;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .light-mode .preview-header {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .theme-btn {
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            background: transparent;
+            color: var(--text-secondary);
+        }
+
+        .theme-btn.active {
+            background: var(--accent-color);
+            color: var(--btn-primary-text);
+            box-shadow: 0 4px 12px rgba(57, 197, 187, 0.3);
+        }
+
+        /* 모달 백드롭 (배경 블러 및 오버레이) */
+        .modal-backdrop {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(6, 7, 10, 0.65);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        
+        .light-mode .modal-backdrop {
+            background-color: rgba(244, 246, 250, 0.65);
+        }
+
+        /* 모달 카드 창 */
+        .modal-card {
+            background: var(--card-bg);
+            border: 1px solid var(--bg-pane-border);
+            box-shadow: var(--modal-shadow);
+            width: 420px;
+            border-radius: 20px;
+            padding: 2.25rem 1.75rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* 로켓 펄스 애니메이션 */
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(57, 197, 187, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(57, 197, 187, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(57, 197, 187, 0); }
+        }
+
+        .rocket-badge {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: rgba(57, 197, 187, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        /* 타이틀 & 설명 */
+        .modal-title {
+            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .modal-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* 패치노트 프리뷰 상자 */
+        .patch-box {
+            background-color: var(--bg-body);
+            border: 1px solid var(--bg-pane-border);
+            border-radius: 10px;
+            padding: 0.85rem 1.1rem;
+            margin-bottom: 1.75rem;
+            text-align: center;
+        }
+
+        .patch-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            word-break: break-all;
+            display: block;
+        }
+
+        /* 버튼 컴포넌트 */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            width: 100%;
+        }
+
+        .btn {
+            font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            height: 46px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            width: 100%;
+            transition: transform 0.15s, filter 0.15s, opacity 0.15s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--btn-secondary-border);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--btn-secondary-bg);
+        }
+
+        /* 보조 제어 영역 (건너뛰기/나중에) */
+        .meta-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.4rem;
+            padding: 0 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .meta-link {
+            color: var(--text-muted);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .meta-link:hover {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 제어기 -->
+    <div class="preview-header">
+        <button class="theme-btn active" id="btn-dark" onclick="setTheme('dark')">🌙 Dark Mode</button>
+        <button class="theme-btn" id="btn-light" onclick="setTheme('light')">☀️ Light Mode</button>
+    </div>
+
+    <!-- 모달 백드롭 영역 -->
+    <div class="modal-backdrop">
+        <div class="modal-card">
+            <!-- 그래픽 배지 및 헤더 -->
+            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 1.25rem;">
+                <div class="rocket-badge">🚀</div>
+                <h3 class="modal-title">새로운 업데이트 발견!</h3>
+                <p class="modal-subtitle">NamuVocaroLyric의 새 버전이 준비되었습니다.</p>
+            </div>
+            
+            <!-- 업데이트 제목 미리보기 -->
+            <div class="patch-box">
+                <span class="patch-title">
+                    · NamuVocaroLyric 1.3.0 업데이트 배포
+                </span>
+            </div>
+
+            <!-- 버튼 영역 -->
+            <div class="btn-group">
+                <a href="https://kio.ac/c/aCo3T-PSRdRJ56GPgDn58b" target="_blank" class="btn btn-primary">
+                    ⬇️ 최신 버전 다운로드
+                </a>
+                <a href="https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=777678" target="_blank" class="btn btn-secondary">
+                    📝 패치노트 확인 (배포 글 보기)
+                </a>
+            </div>
+
+            <!-- 하단 앵커 제어 -->
+            <div class="meta-group">
+                <span class="meta-link" onclick="alert('이번 버전(1.3.0) 건너뛰기가 시뮬레이션 되었습니다. (localStorage 기록)')">이번 버전 건너뛰기</span>
+                <span class="meta-link" onclick="alert('창 닫기가 시뮬레이션 되었습니다. (나중에 하기)')">나중에 하기</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            const body = document.body;
+            const btnDark = document.getElementById('btn-dark');
+            const btnLight = document.getElementById('btn-light');
+            
+            if (theme === 'light') {
+                body.classList.add('light-mode');
+                btnLight.classList.add('active');
+                btnDark.classList.remove('active');
+            } else {
+                body.classList.remove('light-mode');
+                btnDark.classList.add('active');
+                btnLight.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
