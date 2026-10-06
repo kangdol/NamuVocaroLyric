@@ -27,7 +27,12 @@
 * **[⬇️ 최신 릴리즈 다운로드](https://github.com/kangdol/NamuVocaroLyric/releases)**
 
 ---
+### 💻 웹 버전  
+브라우저 상에서 바로 실행 할 수 있는 웹 버전 또한 준비되어 있습니다.
 
+* **[웹 버전 링크](https://kangdol.github.io/NamuVocaroLyric/)**
+
+---
 ## 🛠️ 기술 스택
 
 * **Desktop Runtime**: [Tauri v1](https://tauri.app/) (Rust)
